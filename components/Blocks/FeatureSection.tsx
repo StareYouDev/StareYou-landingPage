@@ -14,37 +14,37 @@ import { motion } from "motion/react";
 export function FeaturesSection() {
     const features = [
         {
-            title: "Trained On Your Own Content",
+            title: "Brand-first web design",
             description:
-                "ChatDeck absorbs knowledge from your website, help docs, product guides, blog posts, PDFs, and FAQs — ensuring context-rich, accurate responses your customers can trust.",
+                "We build websites that feel premium, reflect your identity, and make your business look credible from the first impression.",
             icon: <BookOpen />,
         },
         {
-            title: "24/7 Real-Time Support",
+            title: "Ecommerce websites that sell",
             description:
-                "Never miss a single customer again. From midnight queries to weekend pre-sales questions, ChatDeck handles it instantly, anytime, anywhere.",
+                "Launch polished storefronts with clean product pages, stronger UX, and customer journeys designed to increase conversions.",
             icon: <Clock />,
         },
         {
-            title: "Human-Like Interactions",
+            title: "Portfolio & personal brand sites",
             description:
-                "Designed to talk like a real support agent — friendly, natural, and no robotic AI vibes. Keeps conversations helpful and on-brand.",
+                "Showcase your work beautifully and turn attention into inquiries with a site built for trust and authority.",
             icon: <MessageCircle />,
         },
         {
-            title: "No Code Setup",
-            description: "Connect → Train → Publish. Literally minutes, not weeks — no developers, no complicated workflow.",
+            title: "High-converting landing pages",
+            description: "Need a page for a campaign, launch, or offer? We craft focused pages built to drive leads and sales.",
             icon: <Zap />,
         },
         {
-            title: "Integrates With Your Favorite Tools",
-            description: "Connect with CRM, WhatsApp, Messenger, Slack, Gmail, Intercom, HubSpot, Notion, and more — automate workflows end-to-end.",
+            title: "Performance & SEO",
+            description: "Fast, efficient websites that load quickly, rank better, and give visitors a smoother experience on every device.",
             icon: <Puzzle />,
         },
         {
-            title: "Smart Escalation",
+            title: "Support that keeps growing",
             description:
-                "Complex queries? No problem. ChatDeck hands off conversations to human agents with full chat history included.",
+                "We stay with you after launch to refine your site, improve results, and help your online presence evolve with your brand.",
             icon: <Users />,
         },
     ];
@@ -58,11 +58,10 @@ export function FeaturesSection() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-800 dark:text-neutral-100">
-                    Why Choose ChatDeck?
+                    Why brands choose StareYou
                 </h2>
                 <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-                    Experience the future of customer support with AI that actually understands your business.
-                    Built for scale, designed for humans.
+                    We design websites that don’t just look good — they help your business attract attention, build trust, and turn visitors into customers.
                 </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10">

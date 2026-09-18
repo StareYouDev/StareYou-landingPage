@@ -7,10 +7,11 @@ import Link from 'next/link'
 import React from 'react'
 
 const menuItems = [
-    { name: 'Features', href: '#features' },
+    { name: 'Why StareYou', href: '#features' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Team', href: '#team' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'Reviews', href: '#testimonials' },
+    // { name: 'Packages', href: '#pricing' },
     { name: 'FAQ', href: '#faq' },
 ]
 
@@ -36,22 +37,15 @@ export const Navbar = () => {
                             href="/"
                             aria-label="home"
                             className="flex items-center space-x-2">
-                            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary dark:bg-primary/30">
-                                <svg
-                                    className="h-6 w-6 text-white"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                                </svg>
-
+                            <div className="flex h-9 w-9 items-center justify-center overflow-visible rounded-none bg-transparent p-0">
+                                <img
+                                    src="/logo.png"
+                                    alt="ChatDeck logo"
+                                    className="h-full w-full object-contain"
+                                />
                             </div>
                             <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                                ChatDeck
+                                StareYou
                             </span>
                         </Link>
 
@@ -97,7 +91,7 @@ export const Navbar = () => {
                             <Button
                                 size="sm"
                                 className={'lg:inline-flex rounded-full h-8 px-3 text-sm'} render={<Link href='#' />} nativeButton={false}>
-                                <span>Get Started</span>
+                                <span>Book a Call</span>
                             </Button>
                         </div>
                     </div>

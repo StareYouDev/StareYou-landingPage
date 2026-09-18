@@ -8,32 +8,18 @@ import { motion } from "motion/react";
 export function TeamSection() {
     const teamMembers = [
         {
-            name: "Phillip Bothman",
-            role: "Founder & CEO",
-            description: "A visionary leader driving innovation and collaboration.",
+            name: "Firas Koutari",
+            role: "Creative Director",
+            description: "Shapes premium brand experiences that look sharp and convert better.",
             image: "/team/phillip.png",
-            initials: "PB",
+            initials: "FK",
         },
         {
-            name: "James Kenter",
-            role: "Engineering Manager",
-            description: "Leading teams to build smart, scalable solutions.",
+            name: "Khalid Lechgar",
+            role: "Web Developer",
+            description: "Builds high-performance websites that work beautifully across every device.",
             image: "/team/james.png",
-            initials: "JK",
-        },
-        {
-            name: "Cristofer Kenter",
-            role: "Product Designer",
-            description: "Crafting intuitive and engaging user experiences.",
-            image: "/team/cristofer.png",
-            initials: "CK",
-        },
-        {
-            name: "Alena Lubin",
-            role: "Frontend Developer",
-            description: "Bringing designs to life with seamless interfaces.",
-            image: "/team/alena.png",
-            initials: "AL",
+            initials: "KL",
         },
     ];
 
@@ -47,14 +33,14 @@ export function TeamSection() {
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-800 dark:text-neutral-100">
-                    Meet Our Amazing Team
+                    The team behind StareYou
                 </h2>
                 <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-                    Meet the Passionate Experts Behind Our Success and Learn More About Their Roles.
+                    A focused team of strategists, designers, and developers helping brands launch stronger digital experiences.
                 </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-2">
                 {teamMembers.map((member, index) => (
                     <motion.div
                         key={member.name}

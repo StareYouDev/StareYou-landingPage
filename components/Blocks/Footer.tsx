@@ -8,10 +8,10 @@ export const Footer = () => {
                     {/* Brand Section */}
                     <div className="col-span-1 md:col-span-1">
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                            ChatDeck
+                            StareYou
                         </h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                            AI-powered customer support chatbot for modern businesses.
+                            We build premium websites for businesses, ecommerce brands, and personal brands that want to stand out online.
                         </p>
                     </div>
 
@@ -26,11 +26,11 @@ export const Footer = () => {
                                     Features
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="#pricing" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
                                     Pricing
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link href="#testimonials" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
                                     Testimonials
@@ -91,7 +91,7 @@ export const Footer = () => {
                 {/* Copyright */}
                 <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
                     <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-                        © {new Date().getFullYear()} ChatDeck. All rights reserved.
+                        © {new Date().getFullYear()} StareYou. All rights reserved.
                     </p>
                 </div>
             </div>

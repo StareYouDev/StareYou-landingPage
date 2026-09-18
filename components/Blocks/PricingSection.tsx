@@ -8,53 +8,53 @@ import { useState } from 'react'
 
 const plans = [
     {
-        name: 'Free',
-        description: 'Perfect for testing ChatDeck on your personal website',
-        monthlyPrice: 0,
-        yearlyPrice: 0,
+        name: 'Starter',
+        description: 'Perfect for personal brands, portfolios, and small service businesses',
+        monthlyPrice: 399,
+        yearlyPrice: 349,
         features: [
-            '1 AI Chatbot',
-            '50 conversations/month',
-            'Train on 1 website',
-            'Basic analytics',
-            'Community support'
+            'Custom landing page or portfolio',
+            'Mobile-friendly design',
+            'Basic SEO setup',
+            'Contact form integration',
+            'Launch support'
         ],
         cta: 'Get Started',
         popular: false
     },
     {
-        name: 'Pro',
-        description: 'For growing businesses that need more power',
-        monthlyPrice: 29,
-        yearlyPrice: 24,
+        name: 'Growth',
+        description: 'For businesses ready to attract more leads and build trust online',
+        monthlyPrice: 899,
+        yearlyPrice: 799,
         features: [
-            '3 AI Chatbots',
-            '1,000 conversations/month',
-            'Train on unlimited websites & docs',
-            'Remove ChatDeck branding',
-            'Integrations (Slack, Zapier)',
-            'Priority email support'
+            'Full business website',
+            'Conversion-focused pages',
+            'Advanced design system',
+            'Premium brand styling',
+            'Analytics and optimization',
+            'Priority support'
         ],
-        cta: 'Start Free Trial',
+        cta: 'Book a Strategy Call',
         popular: true,
-        includesPrevious: 'All Free features, plus'
+        includesPrevious: 'Everything in Starter, plus'
     },
     {
-        name: 'Business',
-        description: 'For large teams requiring scale and control',
-        monthlyPrice: 99,
-        yearlyPrice: 79,
+        name: 'Custom',
+        description: 'For ecommerce brands and more complex digital experiences',
+        monthlyPrice: 1499,
+        yearlyPrice: 1299,
         features: [
-            '10 AI Chatbots',
-            '5,000 conversations/month',
-            'Priority 24/7 support',
-            'API Access',
-            'Smart Escalation to humans',
-            'Custom integrations'
+            'Custom ecommerce build',
+            'Product catalog setup',
+            'Advanced UX and flow',
+            'Custom integrations',
+            'Ongoing optimization',
+            'Dedicated project strategy'
         ],
-        cta: 'Contact Sales',
+        cta: 'Request a Quote',
         popular: false,
-        includesPrevious: 'All Pro features, plus'
+        includesPrevious: 'Everything in Growth, plus'
     }
 ]
 
@@ -66,12 +66,12 @@ export function PricingSection() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="mx-auto max-w-2xl text-center mb-12">
-                    <Badge variant="outline" className="mb-4">Pricing Plans</Badge>
+                    <Badge variant="outline" className="mb-4">Website Packages</Badge>
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-                        Choose your plan
+                        Choose the right website package
                     </h2>
                     <p className="text-lg text-muted-foreground mb-8">
-                        Start with our free AI chatbot to automate support, or upgrade to Pro for unlimited training sources and advanced integrations.
+                        Whether you need a personal brand site, a business website, or a full ecommerce build, we create solutions designed to attract and convert.
                     </p>
 
                     {/* Billing Toggle */}

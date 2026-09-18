@@ -5,39 +5,39 @@ import { cn } from "@/lib/utils"
 
 const reviews = [
     {
-        name: "Sarah Chen",
-        username: "@sarahchen",
-        body: "ChatDeck reduced our support ticket response time by 60%. The AI understands context incredibly well and our customers love the instant responses.",
+        name: "Sarah Lee",
+        username: "@sarahlee",
+        body: "StareYou rebuilt our site and it finally feels like our brand. The new design made customers take us seriously right away.",
         img: "https://notion-avatars.netlify.app/api/avatar?preset=female-1",
     },
     {
-        name: "Marcus Johnson",
-        username: "@marcusj",
-        body: "We've seen a 40% reduction in support costs since implementing ChatDeck. It handles routine queries flawlessly, letting our team focus on complex issues.",
+        name: "Marcus Green",
+        username: "@marcusg",
+        body: "Our ecommerce launch looked premium and converted much better than the old version. The whole process was fast and clear.",
         img: "https://notion-avatars.netlify.app/api/avatar/?face=1&nose=10&mouth=8&eyes=11&eyebrows=1&glasses=14&hair=40&accessories=0&details=0&beard=0&halloween=0&christmas=0",
     },
     {
-        name: "Emily Rodriguez",
-        username: "@emilyrodriguez",
-        body: "The setup was surprisingly simple. Within hours, ChatDeck was answering customer questions with accuracy that rivals our best human agents.",
+        name: "Emily Stone",
+        username: "@emilystone",
+        body: "We needed a portfolio website that felt polished and professional. StareYou delivered exactly that and more.",
         img: "https://notion-avatars.netlify.app/api/avatar/?face=13&nose=7&mouth=11&eyes=3&eyebrows=12&glasses=3&hair=40&accessories=0&details=0&beard=0&halloween=0&christmas=0",
     },
     {
         name: "David Kim",
         username: "@davidkim",
-        body: "Our customer satisfaction scores jumped 25% after deploying ChatDeck. It's like having a 24/7 support team that never sleeps.",
+        body: "The site feels premium, loads fast, and we’ve already seen more qualified enquiries coming through.",
         img: "https://notion-avatars.netlify.app/api/avatar/?face=9&nose=3&mouth=7&eyes=10&eyebrows=12&glasses=1&hair=35&accessories=0&details=0&beard=0&halloween=0&christmas=0",
     },
     {
-        name: "Priya Patel",
-        username: "@priyapatel",
-        body: "ChatDeck's multilingual support opened up global markets for us. We now serve customers in 12 languages without hiring additional staff.",
+        name: "Priya Shah",
+        username: "@priyashah",
+        body: "StareYou understood our business and built a website that reflects who we are. It has been a massive upgrade.",
         img: "https://notion-avatars.netlify.app/api/avatar/?face=8&nose=7&mouth=4&eyes=0&eyebrows=6&glasses=11&hair=19&accessories=0&details=0&beard=0&halloween=0&christmas=0",
     },
     {
-        name: "Alex Thompson",
-        username: "@alexthompson",
-        body: "The analytics dashboard is a game-changer. We now understand our customers' pain points better than ever and can proactively improve our product.",
+        name: "Alex Murphy",
+        username: "@alexmurphy",
+        body: "From strategy to launch, the whole experience felt smooth and strategic. We now have a much stronger online presence.",
         img: "https://notion-avatars.netlify.app/api/avatar/?face=1&nose=1&mouth=1&eyes=1&eyebrows=1&glasses=1&hair=1&accessories=1&details=1&beard=1&halloween=1&christmas=1",
     },
 ]
@@ -99,11 +99,10 @@ export function TestimonialSection() {
         <div id="testimonials" className="max-w-7xl mx-auto py-24 sm:py-32">
             <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-800 dark:text-neutral-100">
-                    What Our Customers Say
+                    What clients say about working with StareYou
                 </h2>
                 <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-                    Join thousands of businesses that have transformed their customer support with ChatDeck.
-                    Here&apos;s what they have to say about real results.
+                    Our clients come to us for clean design and strong results — and stay because the websites help them look more credible and win more business.
                 </p>
             </div>
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden gap-2">

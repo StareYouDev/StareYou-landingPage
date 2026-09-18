@@ -6,33 +6,33 @@ export function FaqSection() {
     const items = [
         {
             icon: SparklesIcon,
-            title: 'What is ChatDeck?',
+            title: 'What does StareYou do?',
             content:
-                'ChatDeck is an AI-powered customer support chatbot trained specifically on YOUR website content. Like ChatGPT, but for your business — it learns from your help docs, product guides, blog posts, PDFs, and FAQs to provide accurate, context-rich answers to your customers 24/7. No coding required.'
+                'StareYou builds custom websites for businesses, ecommerce brands, creatives, and personal brands. We focus on premium design, strong messaging, and conversion-focused experiences that help you attract clients and grow revenue.'
         },
         {
             icon: LinkIcon,
-            title: 'How does ChatDeck train on my content?',
+            title: 'Can you build ecommerce websites?',
             content:
-                'Simply connect your website, upload your documentation, or paste links to your help resources. ChatDeck absorbs knowledge from unlimited websites, PDFs, help docs, and FAQs. The AI chatbot then uses this information to provide accurate, on-brand responses tailored to your specific business.'
+                'Yes. We design and build ecommerce websites that are visually polished, easy to shop, and structured to help customers convert. From product pages to storefront strategy, we handle the build with a sales-first approach.'
         },
         {
             icon: SettingsIcon,
-            title: 'How long does it take to set up ChatDeck?',
+            title: 'How long does a website take to build?',
             content:
-                'Minutes, not weeks! Our no-code setup is as simple as: Connect → Train → Publish. You can have your AI chatbot live on your website in under 10 minutes. No developers or complicated workflows needed — just point us to your content and we handle the rest.'
+                'Most projects take between 2 and 6 weeks depending on scope, pages, and complexity. We move quickly, but we also make sure the final site is polished, conversion-focused, and ready to represent your brand.'
         },
         {
             icon: ShieldCheckIcon,
-            title: 'What happens when the chatbot can\'t answer a question?',
+            title: 'Do you only build websites, or can you also improve existing ones?',
             content:
-                'ChatDeck includes Smart Escalation. When the AI encounters a complex query it can\'t confidently answer, it seamlessly hands off the conversation to a human agent with the full chat history included. This ensures your customers always get the help they need without frustration.'
+                'We do both. If you already have a website, we can redesign it, improve the user experience, refresh the messaging, and optimize it to better convert visitors into customers.'
         },
         {
             icon: HeadsetIcon,
-            title: 'Are there limits on the number of conversations?',
+            title: 'Do you offer support after launch?',
             content:
-                'Yes, depending on your plan. The Free plan includes 50 conversations/month, Pro offers 1,000 conversations/month, and Business supports 5,000 conversations/month. A conversation is counted each time a unique visitor interacts with your chatbot. Need more? Contact us for custom enterprise pricing.'
+                'Absolutely. We offer ongoing support and optimization so your site keeps performing as your business grows. That can include updates, improvements, SEO adjustments, and new landing page concepts.'
         }
     ]
     return (
@@ -42,7 +42,7 @@ export function FaqSection() {
                     Frequently Asked Questions
                 </h2>
                 <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-                    Everything you need to know about ChatDeck and how it can transform your business.
+                    Everything you need to know about how StareYou helps businesses build a stronger digital presence.
                 </p>
             </div>
             <Accordion className='max-w-4xl mx-auto' defaultValue={['item-1']}>

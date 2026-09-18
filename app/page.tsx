@@ -1,8 +1,8 @@
 import { FaqSection } from "@/components/Blocks/FaqSection";
 import { FeaturesSection } from "@/components/Blocks/FeatureSection";
-import Hero from "@/components/Blocks/Hero";
+import Hero, { FeaturedProjects } from "@/components/Blocks/Hero";
 import { LogoCarousel } from "@/components/Blocks/LogoCarousel";
-import { PricingSection } from "@/components/Blocks/PricingSection";
+// import { PricingSection } from "@/components/Blocks/PricingSection";
 import { TeamSection } from "@/components/Blocks/TeamSection";
 import { TestimonialSection } from "@/components/Blocks/TestimonialSection";
 
@@ -13,9 +13,10 @@ export default function Home() {
         <Hero />
         <LogoCarousel />
         <FeaturesSection />
+        <FeaturedProjects />
         <TeamSection />
         <TestimonialSection />
-        <PricingSection />
+        {/* <PricingSection /> */}
         <FaqSection />
       </div>
     </main>
