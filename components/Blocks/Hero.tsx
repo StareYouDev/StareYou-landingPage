@@ -1,11 +1,8 @@
 "use client"
 
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { ShimmerButton } from "@/components/ui/shimmer-button"
-import { ArrowUpRight, X } from "lucide-react"
 import { motion, type Variants } from "motion/react"
-import { useState } from "react"
 
 // Animation variants for staggered children
 const containerVariants: Variants = {
@@ -34,27 +31,30 @@ const fadeUpVariants: Variants = {
     },
 }
 
+const liveScreenshot = (url: string) =>
+    `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1400`
+
 const projects = [
     {
-        name: 'Luma Studio',
+        name: 'Caraka Sandy',
         type: 'Portfolio Website',
-        description: 'Luxury personal brand site built to showcase premium services and attract high-value clients.',
-        tag: 'Branding + UX',
-        image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=85',
+        description: 'A polished portfolio experience built to present creative work and personal brand storytelling.',
+        url: 'https://caraka-sandy.vercel.app/',
+        image: liveScreenshot('https://caraka-sandy.vercel.app/'),
     },
     {
-        name: 'Northlane',
-        type: 'Ecommerce Store',
-        description: 'Modern storefront focused on product discovery, conversion flow, and mobile shopping experience.',
-        tag: 'Shopify + Design',
-        image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1400&q=85',
+        name: 'Evara Rust',
+        type: 'Brand Website',
+        description: 'A distinctive brand website with a refined visual direction and an engaging browsing experience.',
+        url: 'https://evara-rust.vercel.app/',
+        image: liveScreenshot('https://evara-rust.vercel.app/'),
     },
     {
-        name: 'Harbor Co.',
-        type: 'Business Website',
-        description: 'Clean service website designed to improve trust, clarity, and inbound leads for a growing company.',
-        tag: 'Strategy + Web',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85',
+        name: 'RSTKYG',
+        type: 'Creative Website',
+        description: 'A modern creative site designed to make a strong first impression and guide visitors through the work.',
+        url: 'https://rstkyg.vercel.app/',
+        image: liveScreenshot('https://rstkyg.vercel.app/'),
     },
 ]
 
@@ -66,13 +66,6 @@ const ProjectPreview = ({ project, expanded = false }: { project: (typeof projec
         style={{ backgroundImage: `url(${project.image})`, backgroundPosition: 'center', backgroundSize: 'cover' }}
     >
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/20 transition-opacity duration-500 group-hover/preview:from-black/75" />
-        <div className="absolute inset-x-5 top-5 flex items-center justify-between text-white">
-            <span className="rounded-full border border-white/35 bg-black/20 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.18em] backdrop-blur-md">
-                {project.tag}
-            </span>
-            <span className="text-xs font-medium opacity-75">01 / 03</span>
-        </div>
-
         <div className="absolute inset-x-5 bottom-5 flex items-end justify-between gap-4 text-white">
             <div>
                 <p className="mb-2 text-[10px] font-medium uppercase tracking-[0.2em] opacity-75">{project.type}</p>
@@ -83,11 +76,8 @@ const ProjectPreview = ({ project, expanded = false }: { project: (typeof projec
 )
 
 export const FeaturedProjects = () => {
-    const [activeProject, setActiveProject] = useState<(typeof projects)[number] | null>(null)
-
     return (
-        <>
-            <motion.section
+        <motion.section
             id="projects"
             className="relative mx-auto max-w-7xl py-16"
             initial={{ opacity: 0, y: 30 }}
@@ -107,45 +97,19 @@ export const FeaturedProjects = () => {
 
             <div className="grid gap-6 md:grid-cols-3">
                 {projects.map((project) => (
-                    <div
+                    <a
                         key={project.name}
+                        href={project.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Visit ${project.name} website`}
                         className="group relative overflow-hidden rounded-[1.6rem] border border-gray-200/80 bg-white p-1.5 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-gray-800 dark:bg-gray-950"
                     >
                         <ProjectPreview project={project} />
-
-                        <div className="absolute bottom-5 right-5">
-                            <Button
-                                type="button"
-                                variant="ghost"
-                                size="sm"
-                                className="rounded-full bg-white/90 px-4 text-black shadow-lg backdrop-blur transition-colors hover:bg-white"
-                                onClick={() => setActiveProject(project)}
-                            >
-                                Preview website
-                                <ArrowUpRight />
-                            </Button>
-                        </div>
-                    </div>
+                    </a>
                 ))}
             </div>
-            </motion.section>
-
-            {activeProject && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label={`${activeProject.name} website preview`}>
-                    <div className="relative w-full max-w-4xl rounded-3xl bg-background p-3 shadow-2xl sm:p-5">
-                        <button
-                            type="button"
-                            aria-label="Close website preview"
-                            className="absolute right-5 top-5 z-10 flex size-9 items-center justify-center rounded-full bg-black/70 text-white transition-transform hover:scale-105"
-                            onClick={() => setActiveProject(null)}
-                        >
-                            <X className="size-4" />
-                        </button>
-                        <ProjectPreview project={activeProject} expanded />
-                    </div>
-                </div>
-            )}
-        </>
+        </motion.section>
     )
 }
 
