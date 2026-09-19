@@ -1,6 +1,9 @@
-import Link from 'next/link';
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export const Footer = () => {
+    const t = useTranslations("Footer");
+
     return (
         <footer className="border-t border-gray-200 dark:border-gray-800 mt-24">
             <div className="mx-auto max-w-7xl px-6 py-12">
@@ -8,22 +11,22 @@ export const Footer = () => {
                     {/* Brand Section */}
                     <div className="col-span-1 md:col-span-1">
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                            StareYou
+                            {t("brand")}
                         </h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                            We build premium websites for businesses, ecommerce brands, and personal brands that want to stand out online.
+                            {t("description")}
                         </p>
                     </div>
 
                     {/* Product Links */}
                     <div>
                         <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">
-                            Product
+                            {t("product.title")}
                         </h4>
                         <ul className="space-y-2">
                             <li>
                                 <Link href="#features" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    Features
+                                    {t("product.features")}
                                 </Link>
                             </li>
                             {/* <li>
@@ -33,7 +36,7 @@ export const Footer = () => {
                             </li> */}
                             <li>
                                 <Link href="#testimonials" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    Testimonials
+                                    {t("product.testimonials")}
                                 </Link>
                             </li>
                         </ul>
@@ -42,22 +45,22 @@ export const Footer = () => {
                     {/* Company Links */}
                     <div>
                         <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">
-                            Company
+                            {t("company.title")}
                         </h4>
                         <ul className="space-y-2">
                             <li>
                                 <Link href="#about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    About
+                                    {t("company.about")}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#blog" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    Blog
+                                    {t("company.blog")}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#team" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    Team
+                                    {t("company.team")}
                                 </Link>
                             </li>
                         </ul>
@@ -66,22 +69,22 @@ export const Footer = () => {
                     {/* Legal Links */}
                     <div>
                         <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">
-                            Legal
+                            {t("legal.title")}
                         </h4>
                         <ul className="space-y-2">
                             <li>
                                 <Link href="#privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    Privacy
+                                    {t("legal.privacy")}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    Terms
+                                    {t("legal.terms")}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#cookies" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-                                    Cookie Policy
+                                    {t("legal.cookies")}
                                 </Link>
                             </li>
                         </ul>
@@ -91,7 +94,7 @@ export const Footer = () => {
                 {/* Copyright */}
                 <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
                     <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-                        © {new Date().getFullYear()} StareYou. All rights reserved.
+                        {t("copyright", { year: new Date().getFullYear() })}
                     </p>
                 </div>
             </div>

@@ -10,44 +10,19 @@ import {
     Zap,
 } from "lucide-react";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 export function FeaturesSection() {
+    const t = useTranslations("Features");
+
     const features = [
-        {
-            title: "Brand-first web design",
-            description:
-                "We build websites that feel premium, reflect your identity, and make your business look credible from the first impression.",
-            icon: <BookOpen />,
-        },
-        {
-            title: "Ecommerce websites that sell",
-            description:
-                "Launch polished storefronts with clean product pages, stronger UX, and customer journeys designed to increase conversions.",
-            icon: <Clock />,
-        },
-        {
-            title: "Portfolio & personal brand sites",
-            description:
-                "Showcase your work beautifully and turn attention into inquiries with a site built for trust and authority.",
-            icon: <MessageCircle />,
-        },
-        {
-            title: "High-converting landing pages",
-            description: "Need a page for a campaign, launch, or offer? We craft focused pages built to drive leads and sales.",
-            icon: <Zap />,
-        },
-        {
-            title: "Performance & SEO",
-            description: "Fast, efficient websites that load quickly, rank better, and give visitors a smoother experience on every device.",
-            icon: <Puzzle />,
-        },
-        {
-            title: "Support that keeps growing",
-            description:
-                "We stay with you after launch to refine your site, improve results, and help your online presence evolve with your brand.",
-            icon: <Users />,
-        },
-    ];
+        { key: "brandFirst", icon: <BookOpen /> },
+        { key: "ecommerce", icon: <Clock /> },
+        { key: "portfolio", icon: <MessageCircle /> },
+        { key: "landingPages", icon: <Zap /> },
+        { key: "performance", icon: <Puzzle /> },
+        { key: "support", icon: <Users /> },
+    ] as const;
     return (
         <div id="features" className="max-w-7xl mx-auto py-16">
             <motion.div
@@ -58,15 +33,21 @@ export function FeaturesSection() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-800 dark:text-neutral-100">
-                    Why brands choose StareYou
+                    {t("title")}
                 </h2>
                 <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-                    We design websites that don’t just look good — they help your business attract attention, build trust, and turn visitors into customers.
+                    {t("description")}
                 </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10">
                 {features.map((feature, index) => (
-                    <Feature key={feature.title} {...feature} index={index} />
+                    <Feature
+                        key={feature.key}
+                        title={t(`items.${feature.key}.title`)}
+                        description={t(`items.${feature.key}.description`)}
+                        icon={feature.icon}
+                        index={index}
+                    />
                 ))}
             </div>
         </div>

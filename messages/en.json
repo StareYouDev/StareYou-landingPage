@@ -1,0 +1,185 @@
+{
+  "Metadata": {
+    "title": "StareYou - Premium Websites for Brands, Stores & Creators",
+    "description": "StareYou builds custom, high-converting websites for businesses, ecommerce brands, portfolios, and personal brands.",
+    "keywords": "web design, web development, ecommerce website, portfolio website, landing page, custom website, StareYou"
+  },
+  "Navbar": {
+    "logoAlt": "StareYou logo",
+    "brand": "StareYou",
+    "menu": {
+      "features": "Why StareYou",
+      "projects": "Projects",
+      "team": "Team",
+      "testimonials": "Reviews",
+      "faq": "FAQ"
+    },
+    "bookCall": "Book a Call",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "languageSwitcher": "Change language"
+  },
+  "Hero": {
+    "badge": "Custom websites for brands, stores & creators \ud83d\ude80",
+    "title": "Websites that look premium and convert.",
+    "description": "We build custom websites for businesses, ecommerce brands, portfolios, and personal brands \u2014 from online stores and service sites to modern landing pages that turn visitors into clients.",
+    "cta": "Book a Free Strategy Call"
+  },
+  "LogoCarousel": {
+    "title": "Built with frameworks and tools trusted by modern teams"
+  },
+  "FeaturedProjects": {
+    "eyebrow": "Selected work",
+    "title": "Featured projects",
+    "description": "A look at the websites we create for ambitious brands, stores, and creators.",
+    "visitAria": "Visit {name} website",
+    "previewAria": "{name} website preview",
+    "items": {
+      "carakaSandy": {
+        "name": "Caraka Sandy",
+        "type": "Portfolio Website",
+        "description": "A polished portfolio experience built to present creative work and personal brand storytelling."
+      },
+      "evaraRust": {
+        "name": "Evara Rust",
+        "type": "Brand Website",
+        "description": "A distinctive brand website with a refined visual direction and an engaging browsing experience."
+      },
+      "rstkyg": {
+        "name": "RSTKYG",
+        "type": "Creative Website",
+        "description": "A modern creative site designed to make a strong first impression and guide visitors through the work."
+      }
+    }
+  },
+  "Features": {
+    "title": "Why brands choose StareYou",
+    "description": "We design websites that don\u2019t just look good \u2014 they help your business attract attention, build trust, and turn visitors into customers.",
+    "items": {
+      "brandFirst": {
+        "title": "Brand-first web design",
+        "description": "We build websites that feel premium, reflect your identity, and make your business look credible from the first impression."
+      },
+      "ecommerce": {
+        "title": "Ecommerce websites that sell",
+        "description": "Launch polished storefronts with clean product pages, stronger UX, and customer journeys designed to increase conversions."
+      },
+      "portfolio": {
+        "title": "Portfolio & personal brand sites",
+        "description": "Showcase your work beautifully and turn attention into inquiries with a site built for trust and authority."
+      },
+      "landingPages": {
+        "title": "High-converting landing pages",
+        "description": "Need a page for a campaign, launch, or offer? We craft focused pages built to drive leads and sales."
+      },
+      "performance": {
+        "title": "Performance & SEO",
+        "description": "Fast, efficient websites that load quickly, rank better, and give visitors a smoother experience on every device."
+      },
+      "support": {
+        "title": "Support that keeps growing",
+        "description": "We stay with you after launch to refine your site, improve results, and help your online presence evolve with your brand."
+      }
+    }
+  },
+  "Team": {
+    "title": "The team behind StareYou",
+    "description": "A focused team of strategists, designers, and developers helping brands launch stronger digital experiences.",
+    "members": {
+      "firas": {
+        "name": "Firas Koutari",
+        "role": "Creative Director",
+        "description": "Shapes premium brand experiences that look sharp and convert better."
+      },
+      "khalid": {
+        "name": "Khalid Lechgar",
+        "role": "Web Developer",
+        "description": "Builds high-performance websites that work beautifully across every device."
+      }
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "github": "GitHub",
+      "instagram": "Instagram"
+    }
+  },
+  "Testimonials": {
+    "title": "What clients say about working with StareYou",
+    "description": "Our clients come to us for clean design and strong results \u2014 and stay because the websites help them look more credible and win more business.",
+    "reviews": {
+      "sarah": {
+        "name": "Sarah Lee",
+        "body": "StareYou rebuilt our site and it finally feels like our brand. The new design made customers take us seriously right away."
+      },
+      "marcus": {
+        "name": "Marcus Green",
+        "body": "Our ecommerce launch looked premium and converted much better than the old version. The whole process was fast and clear."
+      },
+      "emily": {
+        "name": "Emily Stone",
+        "body": "We needed a portfolio website that felt polished and professional. StareYou delivered exactly that and more."
+      },
+      "david": {
+        "name": "David Kim",
+        "body": "The site feels premium, loads fast, and we\u2019ve already seen more qualified enquiries coming through."
+      },
+      "priya": {
+        "name": "Priya Shah",
+        "body": "StareYou understood our business and built a website that reflects who we are. It has been a massive upgrade."
+      },
+      "alex": {
+        "name": "Alex Murphy",
+        "body": "From strategy to launch, the whole experience felt smooth and strategic. We now have a much stronger online presence."
+      }
+    }
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about how StareYou helps businesses build a stronger digital presence.",
+    "items": {
+      "what": {
+        "title": "What does StareYou do?",
+        "content": "StareYou builds custom websites for businesses, ecommerce brands, creatives, and personal brands. We focus on premium design, strong messaging, and conversion-focused experiences that help you attract clients and grow revenue."
+      },
+      "ecommerce": {
+        "title": "Can you build ecommerce websites?",
+        "content": "Yes. We design and build ecommerce websites that are visually polished, easy to shop, and structured to help customers convert. From product pages to storefront strategy, we handle the build with a sales-first approach."
+      },
+      "timeline": {
+        "title": "How long does a website take to build?",
+        "content": "Most projects take between 2 and 6 weeks depending on scope, pages, and complexity. We move quickly, but we also make sure the final site is polished, conversion-focused, and ready to represent your brand."
+      },
+      "improve": {
+        "title": "Do you only build websites, or can you also improve existing ones?",
+        "content": "We do both. If you already have a website, we can redesign it, improve the user experience, refresh the messaging, and optimize it to better convert visitors into customers."
+      },
+      "support": {
+        "title": "Do you offer support after launch?",
+        "content": "Absolutely. We offer ongoing support and optimization so your site keeps performing as your business grows. That can include updates, improvements, SEO adjustments, and new landing page concepts."
+      }
+    }
+  },
+  "Footer": {
+    "brand": "StareYou",
+    "description": "We build premium websites for businesses, ecommerce brands, and personal brands that want to stand out online.",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "testimonials": "Testimonials"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "blog": "Blog",
+      "team": "Team"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookie Policy"
+    },
+    "copyright": "\u00a9 {year} StareYou. All rights reserved."
+  }
+}

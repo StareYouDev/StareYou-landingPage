@@ -1,0 +1,185 @@
+{
+  "Metadata": {
+    "title": "StareYou - Sites web premium pour marques, boutiques et cr\u00e9ateurs",
+    "description": "StareYou con\u00e7oit des sites web sur mesure et \u00e0 fort taux de conversion pour les entreprises, les marques e-commerce, les portfolios et les marques personnelles.",
+    "keywords": "cr\u00e9ation de site web, d\u00e9veloppement web, site e-commerce, site portfolio, landing page, site sur mesure, StareYou"
+  },
+  "Navbar": {
+    "logoAlt": "Logo StareYou",
+    "brand": "StareYou",
+    "menu": {
+      "features": "Pourquoi StareYou",
+      "projects": "Projets",
+      "team": "\u00c9quipe",
+      "testimonials": "Avis",
+      "faq": "FAQ"
+    },
+    "bookCall": "R\u00e9server un appel",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "languageSwitcher": "Changer de langue"
+  },
+  "Hero": {
+    "badge": "Sites web sur mesure pour marques, boutiques et cr\u00e9ateurs \ud83d\ude80",
+    "title": "Des sites web premium qui convertissent.",
+    "description": "Nous cr\u00e9ons des sites web sur mesure pour les entreprises, les marques e-commerce, les portfolios et les marques personnelles \u2014 des boutiques en ligne et sites de services aux landing pages modernes qui transforment les visiteurs en clients.",
+    "cta": "R\u00e9server un appel strat\u00e9gique gratuit"
+  },
+  "LogoCarousel": {
+    "title": "Cr\u00e9\u00e9 avec des frameworks et des outils approuv\u00e9s par des \u00e9quipes modernes"
+  },
+  "FeaturedProjects": {
+    "eyebrow": "S\u00e9lection de projets",
+    "title": "Projets phares",
+    "description": "Un aper\u00e7u des sites web que nous cr\u00e9ons pour des marques, boutiques et cr\u00e9ateurs ambitieux.",
+    "visitAria": "Visiter le site web de {name}",
+    "previewAria": "Aper\u00e7u du site web de {name}",
+    "items": {
+      "carakaSandy": {
+        "name": "Caraka Sandy",
+        "type": "Site portfolio",
+        "description": "Une exp\u00e9rience de portfolio soign\u00e9e con\u00e7ue pour pr\u00e9senter un travail cr\u00e9atif et une identit\u00e9 personnelle."
+      },
+      "evaraRust": {
+        "name": "Evara Rust",
+        "type": "Site de marque",
+        "description": "Un site de marque distinctif avec une direction visuelle raffin\u00e9e et une navigation engageante."
+      },
+      "rstkyg": {
+        "name": "RSTKYG",
+        "type": "Site cr\u00e9atif",
+        "description": "Un site cr\u00e9atif moderne con\u00e7u pour faire une forte premi\u00e8re impression et guider les visiteurs \u00e0 travers le travail pr\u00e9sent\u00e9."
+      }
+    }
+  },
+  "Features": {
+    "title": "Pourquoi les marques choisissent StareYou",
+    "description": "Nous concevons des sites web qui ne se contentent pas d\u2019\u00eatre beaux \u2014 ils aident votre entreprise \u00e0 attirer l\u2019attention, \u00e0 instaurer la confiance et \u00e0 transformer les visiteurs en clients.",
+    "items": {
+      "brandFirst": {
+        "title": "Design web centr\u00e9 sur la marque",
+        "description": "Nous cr\u00e9ons des sites web qui paraissent premium, refl\u00e8tent votre identit\u00e9 et rendent votre entreprise cr\u00e9dible d\u00e8s la premi\u00e8re impression."
+      },
+      "ecommerce": {
+        "title": "Sites e-commerce qui vendent",
+        "description": "Lancez des boutiques soign\u00e9es avec des fiches produits claires, une meilleure exp\u00e9rience utilisateur et des parcours clients con\u00e7us pour augmenter les conversions."
+      },
+      "portfolio": {
+        "title": "Sites portfolio et marque personnelle",
+        "description": "Mettez votre travail en valeur avec \u00e9l\u00e9gance et transformez l\u2019attention en demandes gr\u00e2ce \u00e0 un site con\u00e7u pour inspirer confiance et autorit\u00e9."
+      },
+      "landingPages": {
+        "title": "Landing pages \u00e0 fort taux de conversion",
+        "description": "Besoin d\u2019une page pour une campagne, un lancement ou une offre ? Nous cr\u00e9ons des pages cibl\u00e9es con\u00e7ues pour g\u00e9n\u00e9rer des prospects et des ventes."
+      },
+      "performance": {
+        "title": "Performance et SEO",
+        "description": "Des sites web rapides et efficaces qui se chargent vite, se classent mieux et offrent une exp\u00e9rience fluide aux visiteurs sur tous les appareils."
+      },
+      "support": {
+        "title": "Un accompagnement qui \u00e9volue avec vous",
+        "description": "Nous restons \u00e0 vos c\u00f4t\u00e9s apr\u00e8s le lancement pour affiner votre site, am\u00e9liorer les r\u00e9sultats et faire \u00e9voluer votre pr\u00e9sence en ligne avec votre marque."
+      }
+    }
+  },
+  "Team": {
+    "title": "L\u2019\u00e9quipe derri\u00e8re StareYou",
+    "description": "Une \u00e9quipe soud\u00e9e de strat\u00e8ges, designers et d\u00e9veloppeurs qui aide les marques \u00e0 lancer des exp\u00e9riences digitales plus fortes.",
+    "members": {
+      "firas": {
+        "name": "Firas Koutari",
+        "role": "Directeur cr\u00e9atif",
+        "description": "Fa\u00e7onne des exp\u00e9riences de marque premium, percutantes et plus performantes en conversion."
+      },
+      "khalid": {
+        "name": "Khalid Lechgar",
+        "role": "D\u00e9veloppeur web",
+        "description": "Cr\u00e9e des sites web hautement performants qui fonctionnent parfaitement sur tous les appareils."
+      }
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "github": "GitHub",
+      "instagram": "Instagram"
+    }
+  },
+  "Testimonials": {
+    "title": "Ce que disent nos clients de leur collaboration avec StareYou",
+    "description": "Nos clients viennent chez nous pour un design \u00e9pur\u00e9 et des r\u00e9sultats solides \u2014 et restent parce que leurs sites web les rendent plus cr\u00e9dibles et leur permettent de gagner plus d\u2019affaires.",
+    "reviews": {
+      "sarah": {
+        "name": "Sarah Lee",
+        "body": "StareYou a refait notre site et il repr\u00e9sente enfin notre marque. Le nouveau design a imm\u00e9diatement rendu nos clients plus confiants envers nous."
+      },
+      "marcus": {
+        "name": "Marcus Green",
+        "body": "Le lancement de notre boutique en ligne avait un rendu premium et a converti bien mieux que l\u2019ancienne version. Tout le processus a \u00e9t\u00e9 rapide et clair."
+      },
+      "emily": {
+        "name": "Emily Stone",
+        "body": "Nous avions besoin d\u2019un site portfolio soign\u00e9 et professionnel. StareYou a livr\u00e9 exactement cela, et bien plus encore."
+      },
+      "david": {
+        "name": "David Kim",
+        "body": "Le site para\u00eet premium, se charge rapidement, et nous avons d\u00e9j\u00e0 constat\u00e9 plus de demandes qualifi\u00e9es."
+      },
+      "priya": {
+        "name": "Priya Shah",
+        "body": "StareYou a compris notre activit\u00e9 et a cr\u00e9\u00e9 un site web qui refl\u00e8te vraiment qui nous sommes. C\u2019est une am\u00e9lioration consid\u00e9rable."
+      },
+      "alex": {
+        "name": "Alex Murphy",
+        "body": "De la strat\u00e9gie au lancement, toute l\u2019exp\u00e9rience a \u00e9t\u00e9 fluide et bien pens\u00e9e. Nous avons d\u00e9sormais une pr\u00e9sence en ligne beaucoup plus forte."
+      }
+    }
+  },
+  "Faq": {
+    "title": "Questions fr\u00e9quentes",
+    "description": "Tout ce que vous devez savoir sur la fa\u00e7on dont StareYou aide les entreprises \u00e0 renforcer leur pr\u00e9sence digitale.",
+    "items": {
+      "what": {
+        "title": "Que fait StareYou ?",
+        "content": "StareYou con\u00e7oit des sites web sur mesure pour les entreprises, les marques e-commerce, les cr\u00e9atifs et les marques personnelles. Nous mettons l\u2019accent sur un design premium, un message fort et des exp\u00e9riences orient\u00e9es conversion qui vous aident \u00e0 attirer des clients et \u00e0 augmenter vos revenus."
+      },
+      "ecommerce": {
+        "title": "Pouvez-vous cr\u00e9er des sites e-commerce ?",
+        "content": "Oui. Nous concevons et d\u00e9veloppons des sites e-commerce visuellement soign\u00e9s, faciles \u00e0 utiliser pour acheter, et structur\u00e9s pour aider les clients \u00e0 passer \u00e0 l\u2019achat. Des fiches produits \u00e0 la strat\u00e9gie de la boutique, nous g\u00e9rons la cr\u00e9ation avec une approche orient\u00e9e vente."
+      },
+      "timeline": {
+        "title": "Combien de temps faut-il pour cr\u00e9er un site web ?",
+        "content": "La plupart des projets prennent entre 2 et 6 semaines selon l\u2019envergure, le nombre de pages et la complexit\u00e9. Nous avan\u00e7ons rapidement, tout en veillant \u00e0 ce que le site final soit soign\u00e9, orient\u00e9 conversion et pr\u00eat \u00e0 repr\u00e9senter votre marque."
+      },
+      "improve": {
+        "title": "Ne faites-vous que cr\u00e9er des sites web, ou pouvez-vous aussi am\u00e9liorer des sites existants ?",
+        "content": "Nous faisons les deux. Si vous avez d\u00e9j\u00e0 un site web, nous pouvons le red\u00e9finir, am\u00e9liorer l\u2019exp\u00e9rience utilisateur, actualiser le message et l\u2019optimiser pour mieux convertir les visiteurs en clients."
+      },
+      "support": {
+        "title": "Proposez-vous un accompagnement apr\u00e8s le lancement ?",
+        "content": "Absolument. Nous offrons un accompagnement et une optimisation continus pour que votre site continue de performer \u00e0 mesure que votre entreprise se d\u00e9veloppe. Cela peut inclure des mises \u00e0 jour, des am\u00e9liorations, des ajustements SEO et de nouveaux concepts de landing page."
+      }
+    }
+  },
+  "Footer": {
+    "brand": "StareYou",
+    "description": "Nous cr\u00e9ons des sites web premium pour les entreprises, les marques e-commerce et les marques personnelles qui veulent se d\u00e9marquer en ligne.",
+    "product": {
+      "title": "Produit",
+      "features": "Fonctionnalit\u00e9s",
+      "testimonials": "T\u00e9moignages"
+    },
+    "company": {
+      "title": "Entreprise",
+      "about": "\u00c0 propos",
+      "blog": "Blog",
+      "team": "\u00c9quipe"
+    },
+    "legal": {
+      "title": "L\u00e9gal",
+      "privacy": "Confidentialit\u00e9",
+      "terms": "Conditions",
+      "cookies": "Politique de cookies"
+    },
+    "copyright": "\u00a9 {year} StareYou. Tous droits r\u00e9serv\u00e9s."
+  }
+}

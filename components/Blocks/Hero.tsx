@@ -3,6 +3,7 @@
 import { Badge } from '@/components/ui/badge'
 import { ShimmerButton } from "@/components/ui/shimmer-button"
 import { motion, type Variants } from "motion/react"
+import { useTranslations } from "next-intl"
 
 // Animation variants for staggered children
 const containerVariants: Variants = {
@@ -36,46 +37,50 @@ const liveScreenshot = (url: string) =>
 
 const projects = [
     {
-        name: 'Caraka Sandy',
-        type: 'Portfolio Website',
-        description: 'A polished portfolio experience built to present creative work and personal brand storytelling.',
+        key: 'carakaSandy',
         url: 'https://caraka-sandy.vercel.app/',
         image: liveScreenshot('https://caraka-sandy.vercel.app/'),
     },
     {
-        name: 'Evara Rust',
-        type: 'Brand Website',
-        description: 'A distinctive brand website with a refined visual direction and an engaging browsing experience.',
+        key: 'evaraRust',
         url: 'https://evara-rust.vercel.app/',
         image: liveScreenshot('https://evara-rust.vercel.app/'),
     },
     {
-        name: 'RSTKYG',
-        type: 'Creative Website',
-        description: 'A modern creative site designed to make a strong first impression and guide visitors through the work.',
+        key: 'rstkyg',
         url: 'https://rstkyg.vercel.app/',
         image: liveScreenshot('https://rstkyg.vercel.app/'),
     },
-]
+] as const
 
-const ProjectPreview = ({ project, expanded = false }: { project: (typeof projects)[number]; expanded?: boolean }) => (
+const ProjectPreview = ({
+    name,
+    type,
+    image,
+}: {
+    name: string
+    type: string
+    image: string
+}) => (
     <div
-        className={`group/preview relative overflow-hidden ${expanded ? 'aspect-video rounded-2xl' : 'aspect-[1.08] rounded-[1.45rem]'}`}
+        className="group/preview relative overflow-hidden aspect-[1.08] rounded-[1.45rem]"
         role="img"
-        aria-label={`${project.name} website preview`}
-        style={{ backgroundImage: `url(${project.image})`, backgroundPosition: 'center', backgroundSize: 'cover' }}
+        aria-label={name}
+        style={{ backgroundImage: `url(${image})`, backgroundPosition: 'center', backgroundSize: 'cover' }}
     >
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/20 transition-opacity duration-500 group-hover/preview:from-black/75" />
         <div className="absolute inset-x-5 bottom-5 flex items-end justify-between gap-4 text-white">
             <div>
-                <p className="mb-2 text-[10px] font-medium uppercase tracking-[0.2em] opacity-75">{project.type}</p>
-                <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">{project.name}</h3>
+                <p className="mb-2 text-[10px] font-medium uppercase tracking-[0.2em] opacity-75">{type}</p>
+                <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">{name}</h3>
             </div>
         </div>
     </div>
 )
 
 export const FeaturedProjects = () => {
+    const t = useTranslations('FeaturedProjects')
+
     return (
         <motion.section
             id="projects"
@@ -86,34 +91,40 @@ export const FeaturedProjects = () => {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
             <div className="mb-16 text-center">
-                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Selected work</p>
+                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">{t('eyebrow')}</p>
                 <h2 className="mb-4 text-4xl font-bold text-neutral-800 dark:text-neutral-100 md:text-5xl">
-                    Featured projects
+                    {t('title')}
                 </h2>
                 <p className="mx-auto max-w-3xl text-lg text-neutral-600 dark:text-neutral-400 md:text-xl">
-                    A look at the websites we create for ambitious brands, stores, and creators.
+                    {t('description')}
                 </p>
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">
-                {projects.map((project) => (
-                    <a
-                        key={project.name}
-                        href={project.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`Visit ${project.name} website`}
-                        className="group relative overflow-hidden rounded-[1.6rem] border border-gray-200/80 bg-white p-1.5 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-gray-800 dark:bg-gray-950"
-                    >
-                        <ProjectPreview project={project} />
-                    </a>
-                ))}
+                {projects.map((project) => {
+                    const name = t(`items.${project.key}.name`)
+                    const type = t(`items.${project.key}.type`)
+                    return (
+                        <a
+                            key={project.key}
+                            href={project.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={t('visitAria', { name })}
+                            className="group relative overflow-hidden rounded-[1.6rem] border border-gray-200/80 bg-white p-1.5 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-gray-800 dark:bg-gray-950"
+                        >
+                            <ProjectPreview name={name} type={type} image={project.image} />
+                        </a>
+                    )
+                })}
             </div>
         </motion.section>
     )
 }
 
 const Hero = () => {
+    const t = useTranslations('Hero')
+
     return (
         <motion.div
             variants={containerVariants}
@@ -125,7 +136,7 @@ const Hero = () => {
                 variants={fadeUpVariants}
             >
                 <Badge className="h-auto text-sm font-medium px-4 py-2 " variant={'outline'}>
-                    Custom websites for brands, stores & creators 🚀
+                    {t('badge')}
                 </Badge>
             </motion.div>
 
@@ -134,13 +145,13 @@ const Hero = () => {
                     className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl"
                     variants={fadeUpVariants}
                 >
-                    Websites that look premium and convert.
+                    {t('title')}
                 </motion.h1>
                 <motion.p
                     className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
                     variants={fadeUpVariants}
                 >
-                    We build custom websites for businesses, ecommerce brands, portfolios, and personal brands — from online stores and service sites to modern landing pages that turn visitors into clients.
+                    {t('description')}
                 </motion.p>
             </div>
 
@@ -148,7 +159,7 @@ const Hero = () => {
                 className="my-6 mb-12 flex items-center justify-center gap-x-4"
                 variants={fadeUpVariants}
             >
-                <ShimmerButton>Book a Free Strategy Call</ShimmerButton>
+                <ShimmerButton>{t('cta')}</ShimmerButton>
             </motion.div>
 
         </motion.div>

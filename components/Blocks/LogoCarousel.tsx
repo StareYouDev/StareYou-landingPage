@@ -1,6 +1,7 @@
 "use client"
 
 import { Card } from '@/components/ui/card';
+import { useTranslations } from 'next-intl';
 import {
   siDjango,
   siDocker,
@@ -115,12 +116,14 @@ const techCompanies = [
 ] as const
 
 export function LogoCarousel() {
+  const t = useTranslations('LogoCarousel')
+
   return (
     <section className="pb-12 sm:pb-16 lg:pb-20 pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="font-medium text-muted-foreground mb-8">
-            Built with frameworks and tools trusted by modern teams
+            {t('title')}
           </p>
 
           {/* Logo Carousel with Fade Effect */}

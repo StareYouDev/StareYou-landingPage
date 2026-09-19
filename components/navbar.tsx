@@ -1,23 +1,26 @@
 'use client'
 import { AnimatedThemeToggler } from '@/components/ui/animated-theme-toggler'
 import { Button } from '@/components/ui/button'
+import { LanguageSwitcher } from '@/components/language-switcher'
 import { cn } from '@/lib/utils'
 import { Menu, X } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 
-const menuItems = [
-    { name: 'Why StareYou', href: '#features' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Team', href: '#team' },
-    { name: 'Reviews', href: '#testimonials' },
-    // { name: 'Packages', href: '#pricing' },
-    { name: 'FAQ', href: '#faq' },
-]
-
 export const Navbar = () => {
+    const t = useTranslations('Navbar')
     const [menuState, setMenuState] = React.useState(false)
     const [isScrolled, setIsScrolled] = React.useState(false)
+
+    const menuItems = [
+        { name: t('menu.features'), href: '#features' },
+        { name: t('menu.projects'), href: '#projects' },
+        { name: t('menu.team'), href: '#team' },
+        { name: t('menu.testimonials'), href: '#testimonials' },
+        // { name: t('menu.pricing'), href: '#pricing' },
+        { name: t('menu.faq'), href: '#faq' },
+    ]
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -40,18 +43,18 @@ export const Navbar = () => {
                             <div className="flex h-9 w-9 items-center justify-center overflow-visible rounded-none bg-transparent p-0">
                                 <img
                                     src="/logo.png"
-                                    alt="ChatDeck logo"
+                                    alt={t('logoAlt')}
                                     className="h-full w-full object-contain"
                                 />
                             </div>
                             <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                                StareYou
+                                {t('brand')}
                             </span>
                         </Link>
 
                         <button
                             onClick={() => setMenuState(!menuState)}
-                            aria-label={menuState == true ? 'Close Menu' : 'Open Menu'}
+                            aria-label={menuState == true ? t('closeMenu') : t('openMenu')}
                             className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden">
                             <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
                             <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200" />
@@ -86,12 +89,13 @@ export const Navbar = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                        <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit md:items-center">
+                            <LanguageSwitcher />
                             <AnimatedThemeToggler />
                             <Button
                                 size="sm"
                                 className={'lg:inline-flex rounded-full h-8 px-3 text-sm'} render={<Link href='#' />} nativeButton={false}>
-                                <span>Book a Call</span>
+                                <span>{t('bookCall')}</span>
                             </Button>
                         </div>
                     </div>
