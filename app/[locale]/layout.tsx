@@ -40,17 +40,13 @@ export async function generateMetadata({
     namespace: 'Metadata',
   });
 
+  // Every locale (including the default) is served under its own prefix
+  // since the static export has no middleware to rewrite an unprefixed "/".
   const languages = Object.fromEntries(
-    routing.locales.map((l) => [
-      l,
-      l === routing.defaultLocale ? siteConfig.url : `${siteConfig.url}/${l}`,
-    ]),
+    routing.locales.map((l) => [l, `${siteConfig.url}/${l}`]),
   );
 
-  const canonical =
-    locale === routing.defaultLocale
-      ? siteConfig.url
-      : `${siteConfig.url}/${locale}`;
+  const canonical = `${siteConfig.url}/${locale}`;
 
   return {
     metadataBase: new URL(siteConfig.url),
