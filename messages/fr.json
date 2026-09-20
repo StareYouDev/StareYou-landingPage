@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "StareYou - Sites web premium pour marques, boutiques et cr\u00e9ateurs",
+    "title": "StareYou - On crée le digital. Vous allez plus loin.",
     "description": "StareYou con\u00e7oit des sites web sur mesure et \u00e0 fort taux de conversion pour les entreprises, les marques e-commerce, les portfolios et les marques personnelles.",
     "keywords": "cr\u00e9ation de site web, d\u00e9veloppement web, site e-commerce, site portfolio, landing page, site sur mesure, StareYou"
   },
@@ -14,16 +14,16 @@
       "testimonials": "Avis",
       "faq": "FAQ"
     },
-    "bookCall": "R\u00e9server un appel",
+    "bookCall": "Parlons-en",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "languageSwitcher": "Changer de langue"
   },
   "Hero": {
     "badge": "Sites web sur mesure pour marques, boutiques et cr\u00e9ateurs \ud83d\ude80",
-    "title": "Des sites web premium qui convertissent.",
+    "title": "On crée le digital. Vous allez plus loin.",
     "description": "Nous cr\u00e9ons des sites web sur mesure pour les entreprises, les marques e-commerce, les portfolios et les marques personnelles \u2014 des boutiques en ligne et sites de services aux landing pages modernes qui transforment les visiteurs en clients.",
-    "cta": "R\u00e9server un appel strat\u00e9gique gratuit"
+    "cta": "Exprimez votre besoin"
   },
   "LogoCarousel": {
     "title": "Cr\u00e9\u00e9 avec des frameworks et des outils approuv\u00e9s par des \u00e9quipes modernes"
@@ -92,7 +92,7 @@
         "description": "Fa\u00e7onne des exp\u00e9riences de marque premium, percutantes et plus performantes en conversion."
       },
       "khalid": {
-        "name": "Khalid Lechgar",
+        "name": "Khalid Lachguer",
         "role": "D\u00e9veloppeur web",
         "description": "Cr\u00e9e des sites web hautement performants qui fonctionnent parfaitement sur tous les appareils."
       }
@@ -109,28 +109,28 @@
     "description": "Nos clients viennent chez nous pour un design \u00e9pur\u00e9 et des r\u00e9sultats solides \u2014 et restent parce que leurs sites web les rendent plus cr\u00e9dibles et leur permettent de gagner plus d\u2019affaires.",
     "reviews": {
       "sarah": {
-        "name": "Sarah Lee",
-        "body": "StareYou a refait notre site et il repr\u00e9sente enfin notre marque. Le nouveau design a imm\u00e9diatement rendu nos clients plus confiants envers nous."
+        "name": "Salma Bennani",
+        "body": "StareYou a refait notre site et il représente enfin notre marque. Le nouveau design a immédiatement rendu nos clients plus confiants envers nous."
       },
       "marcus": {
-        "name": "Marcus Green",
-        "body": "Le lancement de notre boutique en ligne avait un rendu premium et a converti bien mieux que l\u2019ancienne version. Tout le processus a \u00e9t\u00e9 rapide et clair."
+        "name": "Youssef El Amrani",
+        "body": "Le lancement de notre boutique en ligne avait un rendu premium et a converti bien mieux que l’ancienne version. Tout le processus a été rapide et clair."
       },
       "emily": {
-        "name": "Emily Stone",
-        "body": "Nous avions besoin d\u2019un site portfolio soign\u00e9 et professionnel. StareYou a livr\u00e9 exactement cela, et bien plus encore."
+        "name": "Lina Tazi",
+        "body": "Nous avions besoin d’un site portfolio soigné et professionnel. StareYou a livré exactement cela, et bien plus encore."
       },
       "david": {
-        "name": "David Kim",
-        "body": "Le site para\u00eet premium, se charge rapidement, et nous avons d\u00e9j\u00e0 constat\u00e9 plus de demandes qualifi\u00e9es."
+        "name": "Mehdi Berrada",
+        "body": "Le site paraît premium, se charge rapidement, et nous avons déjà constaté plus de demandes qualifiées."
       },
       "priya": {
-        "name": "Priya Shah",
-        "body": "StareYou a compris notre activit\u00e9 et a cr\u00e9\u00e9 un site web qui refl\u00e8te vraiment qui nous sommes. C\u2019est une am\u00e9lioration consid\u00e9rable."
+        "name": "Aya Alaoui",
+        "body": "StareYou a compris notre activité et a créé un site web qui reflète vraiment qui nous sommes. C’est une amélioration considérable."
       },
       "alex": {
-        "name": "Alex Murphy",
-        "body": "De la strat\u00e9gie au lancement, toute l\u2019exp\u00e9rience a \u00e9t\u00e9 fluide et bien pens\u00e9e. Nous avons d\u00e9sormais une pr\u00e9sence en ligne beaucoup plus forte."
+        "name": "Hamza Idrissi",
+        "body": "De la stratégie au lancement, toute l’expérience a été fluide et bien pensée. Nous avons désormais une présence en ligne beaucoup plus forte."
       }
     }
   },

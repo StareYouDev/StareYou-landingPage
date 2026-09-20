@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "StareYou - Premium Websites for Brands, Stores & Creators",
+    "title": "StareYou - We Build Digital. You Break Through.",
     "description": "StareYou builds custom, high-converting websites for businesses, ecommerce brands, portfolios, and personal brands.",
     "keywords": "web design, web development, ecommerce website, portfolio website, landing page, custom website, StareYou"
   },
@@ -14,16 +14,16 @@
       "testimonials": "Reviews",
       "faq": "FAQ"
     },
-    "bookCall": "Book a Call",
+    "bookCall": "Let’s Talk",
     "openMenu": "Open Menu",
     "closeMenu": "Close Menu",
     "languageSwitcher": "Change language"
   },
   "Hero": {
     "badge": "Custom websites for brands, stores & creators \ud83d\ude80",
-    "title": "Websites that look premium and convert.",
+    "title": "We Build Digital. You Break Through.",
     "description": "We build custom websites for businesses, ecommerce brands, portfolios, and personal brands \u2014 from online stores and service sites to modern landing pages that turn visitors into clients.",
-    "cta": "Book a Free Strategy Call"
+    "cta": "Tell Us What You Need"
   },
   "LogoCarousel": {
     "title": "Built with frameworks and tools trusted by modern teams"
@@ -92,7 +92,7 @@
         "description": "Shapes premium brand experiences that look sharp and convert better."
       },
       "khalid": {
-        "name": "Khalid Lechgar",
+        "name": "Khalid Lachguer",
         "role": "Web Developer",
         "description": "Builds high-performance websites that work beautifully across every device."
       }
@@ -109,27 +109,27 @@
     "description": "Our clients come to us for clean design and strong results \u2014 and stay because the websites help them look more credible and win more business.",
     "reviews": {
       "sarah": {
-        "name": "Sarah Lee",
+        "name": "Salma Bennani",
         "body": "StareYou rebuilt our site and it finally feels like our brand. The new design made customers take us seriously right away."
       },
       "marcus": {
-        "name": "Marcus Green",
+        "name": "Youssef El Amrani",
         "body": "Our ecommerce launch looked premium and converted much better than the old version. The whole process was fast and clear."
       },
       "emily": {
-        "name": "Emily Stone",
+        "name": "Lina Tazi",
         "body": "We needed a portfolio website that felt polished and professional. StareYou delivered exactly that and more."
       },
       "david": {
-        "name": "David Kim",
-        "body": "The site feels premium, loads fast, and we\u2019ve already seen more qualified enquiries coming through."
+        "name": "Mehdi Berrada",
+        "body": "The site feels premium, loads fast, and we’ve already seen more qualified enquiries coming through."
       },
       "priya": {
-        "name": "Priya Shah",
+        "name": "Aya Alaoui",
         "body": "StareYou understood our business and built a website that reflects who we are. It has been a massive upgrade."
       },
       "alex": {
-        "name": "Alex Murphy",
+        "name": "Hamza Idrissi",
         "body": "From strategy to launch, the whole experience felt smooth and strategic. We now have a much stronger online presence."
       }
     }
