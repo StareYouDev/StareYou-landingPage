@@ -10,6 +10,8 @@ import { cn } from '@/lib/utils';
 import { routing } from '@/i18n/routing';
 import { siteConfig } from '@/lib/site';
 import type { Locale } from '@/i18n/routing';
+import Image from 'next/image';
+import InitialLoader from '@/components/ui/InitialLoader';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -102,6 +104,8 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <InitialLoader />
+
         <NextIntlClientProvider>
           <Navbar />
           {children}

@@ -83,20 +83,23 @@
     }
   },
   "Team": {
-    "title": "The team behind StareYou",
-    "description": "A focused team of strategists, designers, and developers helping brands launch stronger digital experiences.",
+    "title": "The Team Behind StareYou",
+    "description": "Two co-founders, four years of experience, and one shared ambition: building modern, high-performing digital experiences designed to last.",
+
     "members": {
       "firas": {
         "name": "Firas Koutari",
-        "role": "Creative Director",
-        "description": "Shapes premium brand experiences that look sharp and convert better."
+        "role": "Co-Founder & Web Developer",
+        "description": "Passionate about digital experiences, he turns ideas into engaging web solutions by combining creativity, precision, and modern technologies."
       },
+
       "khalid": {
         "name": "Khalid Lachguer",
-        "role": "Web Developer",
-        "description": "Builds high-performance websites that work beautifully across every device."
+        "role": "Co-Founder & Web Developer",
+        "description": "Focused on performance and architecture, he builds robust and scalable web solutions with a strong emphasis on quality, reliability, and user experience."
       }
     },
+
     "social": {
       "facebook": "Facebook",
       "twitter": "Twitter",

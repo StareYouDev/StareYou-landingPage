@@ -82,21 +82,25 @@
       }
     }
   },
+
   "Team": {
-    "title": "L\u2019\u00e9quipe derri\u00e8re StareYou",
-    "description": "Une \u00e9quipe soud\u00e9e de strat\u00e8ges, designers et d\u00e9veloppeurs qui aide les marques \u00e0 lancer des exp\u00e9riences digitales plus fortes.",
+    "title": "L’équipe derrière StareYou",
+    "description": "Deux cofondateurs, quatre années d’expérience et une même ambition : concevoir des expériences digitales modernes, performantes et pensées pour durer.",
+
     "members": {
       "firas": {
         "name": "Firas Koutari",
-        "role": "Directeur cr\u00e9atif",
-        "description": "Fa\u00e7onne des exp\u00e9riences de marque premium, percutantes et plus performantes en conversion."
+        "role": "Cofondateur & Développeur Web",
+        "description": "Passionné par la conception digitale, il donne vie aux idées en combinant créativité, précision et technologies modernes pour créer des expériences web engageantes."
       },
+
       "khalid": {
         "name": "Khalid Lachguer",
-        "role": "D\u00e9veloppeur web",
-        "description": "Cr\u00e9e des sites web hautement performants qui fonctionnent parfaitement sur tous les appareils."
+        "role": "Cofondateur & Développeur Web",
+        "description": "Orienté performance et architecture, il construit des solutions web robustes et évolutives, avec une attention particulière portée à la qualité, la fiabilité et l’expérience utilisateur."
       }
     },
+
     "social": {
       "facebook": "Facebook",
       "twitter": "Twitter",
@@ -104,6 +108,7 @@
       "instagram": "Instagram"
     }
   },
+
   "Testimonials": {
     "title": "Ce que disent nos clients de leur collaboration avec StareYou",
     "description": "Nos clients viennent chez nous pour un design \u00e9pur\u00e9 et des r\u00e9sultats solides \u2014 et restent parce que leurs sites web les rendent plus cr\u00e9dibles et leur permettent de gagner plus d\u2019affaires.",
