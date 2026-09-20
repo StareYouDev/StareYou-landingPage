@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StareYou</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <!--
+      This is a plain static file (copied as-is from public/ into out/ during
+      `next build`) — it is intentionally NOT part of the Next.js app router
+      tree, so it can never collide with app/[locale]/layout.tsx.
+
+      On real cPanel/Apache hosting, public/.htaccess redirects "/" to
+      "/en/" or "/fr/" before this file is ever requested. This page only
+      acts as a fallback for local static-file testing (e.g. `npx serve`)
+      or any host that doesn't process .htaccess.
+    -->
+    <script>
+      (function () {
+        function getCookie(name) {
+          var match = document.cookie.match(
+            new RegExp("(?:^|; )" + name + "=([^;]*)")
+          );
+          return match ? decodeURIComponent(match[1]) : null;
+        }
+
+        var supportedLocales = ["en", "fr"];
+        var savedLocale = getCookie("NEXT_LOCALE");
+        var target;
+
+        if (savedLocale && supportedLocales.indexOf(savedLocale) !== -1) {
+          // The visitor already picked a language before (via the language
+          // switcher, which sets this cookie) — honor that choice.
+          target = "/" + savedLocale + "/";
+        } else {
+          var languages =
+            navigator.languages && navigator.languages.length
+              ? navigator.languages
+              : [navigator.language || ""];
+          var prefersEnglish = languages.some(function (lang) {
+            return lang.toLowerCase().indexOf("en") === 0;
+          });
+          target = prefersEnglish ? "/en/" : "/fr/";
+        }
+
+        location.replace(target);
+      })();
+    </script>
+    <!-- No-JS fallback: sent to the default locale if JavaScript is disabled. -->
+    <meta http-equiv="refresh" content="0;url=/fr/" />
+  </head>
+  <body></body>
+</html>

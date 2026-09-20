@@ -1,0 +1,60 @@
+# ----------------------------------------------------------------------------
+# Apache configuration for the statically exported Next.js site (cPanel).
+# This file is copied as-is from `public/` into `out/` on every `next build`.
+# Upload the contents of `out/` (including this file) to your cPanel document
+# root (e.g. `public_html/` or a subdomain folder).
+# ----------------------------------------------------------------------------
+
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS. Uncomment once an SSL certificate is installed for the domain
+  # (cPanel's AutoSSL provides one for free).
+  # RewriteCond %{HTTPS} off
+  # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+  # The static export has no server/middleware to negotiate a locale, so the
+  # bare domain root ("/") is redirected here to a locale-prefixed route.
+  # Priority: 1) a previously saved language choice (the `NEXT_LOCALE`
+  # cookie, set automatically by the language switcher), 2) the browser's
+  # preferred language (`Accept-Language` header), 3) fall back to French.
+  RewriteCond %{HTTP_COOKIE} NEXT_LOCALE=en [NC]
+  RewriteRule ^$ /en/ [R=302,L]
+
+  RewriteCond %{HTTP_COOKIE} NEXT_LOCALE=fr [NC]
+  RewriteRule ^$ /fr/ [R=302,L]
+
+  RewriteCond %{HTTP:Accept-Language} ^en [NC]
+  RewriteRule ^$ /en/ [R=302,L]
+  RewriteRule ^$ /fr/ [R=302,L]
+
+  # Flag build assets under /_next/static/ so they can be cached aggressively
+  # below: they are content-hashed by Next.js, so their URL changes whenever
+  # their contents change.
+  RewriteCond %{REQUEST_URI} ^/_next/static/
+  RewriteRule ^ - [E=IS_IMMUTABLE_ASSET:1]
+</IfModule>
+
+# Serve the exported 404 page for unknown routes.
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  # Hashed, versioned build output: safe to cache "forever".
+  Header set Cache-Control "public, max-age=31536000, immutable" env=IS_IMMUTABLE_ASSET
+
+  # HTML documents change on every deploy: always revalidate with the server.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Prevent directory listings from being shown for folders without an index.
+Options -Indexes

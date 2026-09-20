@@ -197,9 +197,47 @@ chatdeck/
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ShadcnDeck/chatdeck-shadcn-saas-landing-page-template)
 
+### Deploy to cPanel (static hosting)
+
+This project is configured to build as a fully static site (`output: "export"` in `next.config.ts`), so it can be hosted on a plain cPanel account with no Node.js support.
+
+1. **Build the static site**
+
+   ```bash
+   npm run build
+   ```
+
+   This produces an `out/` folder containing plain HTML/CSS/JS — no server required. It includes a `.htaccess` (copied from `public/.htaccess`) that:
+   - Redirects the domain root (`/`) to `/en/` or `/fr/` based on the visitor's browser language.
+   - Serves the generated `404.html` for unknown routes.
+   - Enables gzip compression and long-term caching for hashed `/_next/static/` assets.
+
+2. **Set your production URL**
+
+   Before building, set `NEXT_PUBLIC_SITE_URL` to your real domain (used for canonical URLs, sitemap, and Open Graph tags) via a `.env.production.local` file or your shell:
+
+   ```bash
+   NEXT_PUBLIC_SITE_URL=https://yourdomain.com npm run build
+   ```
+
+3. **Upload to cPanel**
+
+   Upload the **contents** of `out/` (not the folder itself) to your document root — typically `public_html/` for the primary domain, or `public_html/<subdomain>/` for a subdomain/addon domain. Use cPanel's File Manager (zip the `out/` contents locally, upload, then extract) or an FTP/SFTP client.
+
+4. **Verify**
+
+   Visit your domain — it should redirect to `/en/` or `/fr/`, and both locales, images, and fonts should load with no server errors.
+
+**Notes & limitations of the static export:**
+
+- There is no Node.js server, so API routes, Server Actions, and middleware are not available — this template doesn't use any.
+- `next/image` optimization is disabled (`images.unoptimized: true`); images are served as-is.
+- Locale prefixes are always shown (`/en/`, `/fr/`) since there's no server to rewrite the default locale to an unprefixed `/`.
+- To preview the exact static build locally before uploading, run `npm run build` then `npm start` (serves `out/` at `http://localhost:3000`). Note that this local preview server does **not** read `.htaccess`, so the root-redirect behavior only applies once deployed to Apache/cPanel.
+
 ### Other Platforms
 
-ChatDeck works on any platform that supports Next.js:
+ChatDeck also works on any platform that supports a full Next.js server or static hosting:
 
 - [Netlify](https://docs.netlify.com/frameworks/next-js/)
 - [Railway](https://railway.app/)
